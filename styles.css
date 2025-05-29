@@ -305,7 +305,7 @@ h2 {
 
 .btn-submit {
   width: 100%;
-  background-color: yellowgreen;
+  background-color: rgb(206, 14, 1);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -314,7 +314,7 @@ h2 {
 }
 
 .btn-submit:hover {
-  background-color: rgb(136, 182, 44);
+  background-color: rgb(206, 14, 1);
 }
 
 .info-icon {
@@ -328,7 +328,7 @@ h2 {
 }
 
 .info-icon i {
-  color: yellowgreen;
+  color: rgb(206, 14, 1);
 }
 
 .info-item h4 {
