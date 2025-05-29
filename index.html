@@ -240,19 +240,26 @@
             <div class="form-container">
               <h3>Envíanos un mensaje</h3>
               <form action="https://formsubmit.co/priscila.s.becerra@gmail.com" method="POST">
-                <div class="form-group">
-                  <label for="name">Nombre</label>
-                  <input type="text" id="name" placeholder="Tu nombre">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="Tu email">
-                </div>
-                <div class="form-group">
-                  <label for="message">Mensaje</label>
-                  <textarea id="message" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
-                </div>
+
+                <!-- Desactiva captcha si no lo necesitas -->
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+
+                <label for="message">Mensaje</label>
+
+                <textarea id="message" name="message" rows="4" placeholder="¿En qué podemos ayudarte?"
+                  required></textarea>
+
+
+
                 <button type="submit" class="btn-submit">Enviar Mensaje</button>
+
               </form>
             </div>
           </div>
